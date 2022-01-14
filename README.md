@@ -18,3 +18,7 @@
 
 #### 다크모드에서도 호환이 된다.
 <img width="250" alt="스크린샷 2022-01-14 오후 11 07 58" src="https://user-images.githubusercontent.com/89234129/149528671-f502ea48-3d2d-4841-990f-d3aeb3591627.png">
+--------
+ 
+#### 오토레이아웃으로 13pro max 도 호환되는 모습
+<img width="486" alt="스크린샷 2022-01-14 오후 11 25 47" src="https://user-images.githubusercontent.com/89234129/149531188-27b9f3c5-2413-408e-b565-13678194a29f.png">

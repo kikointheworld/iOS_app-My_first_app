@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PrA-hE-FQr">
+                                <rect key="frame" x="145" y="724" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fAg-lM-ha2"/>
+                                    <constraint firstAttribute="width" constant="100" id="o72-SS-oFT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Refresh">
+                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d44-ym-u7T"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$1000000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RO2-Fw-Nbp">
+                                <rect key="frame" x="86" y="612" width="219" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MyPics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Npq-zy-qra">
+                                <rect key="frame" x="86" y="75" width="219" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="Pww-cI-Wz7">
+                                <rect key="frame" x="30" y="212" width="330" height="330"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PrA-hE-FQr" firstAttribute="top" secondItem="RO2-Fw-Nbp" secondAttribute="bottom" constant="60" id="1cx-Z8-lKE"/>
+                            <constraint firstItem="Pww-cI-Wz7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.769231" id="6x8-Hy-5Ly"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PrA-hE-FQr" secondAttribute="bottom" constant="36" id="8Ho-gO-HXe"/>
+                            <constraint firstItem="Pww-cI-Wz7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CgJ-Lb-W5C"/>
+                            <constraint firstItem="RO2-Fw-Nbp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GZf-OG-ST4"/>
+                            <constraint firstItem="Pww-cI-Wz7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KZk-6L-BXL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Npq-zy-qra" secondAttribute="bottom" constant="675" id="M9m-Db-XzW"/>
+                            <constraint firstItem="Npq-zy-qra" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="PTs-77-G62"/>
+                            <constraint firstItem="PrA-hE-FQr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XRP-Oj-ekt"/>
+                            <constraint firstItem="Pww-cI-Wz7" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.35545" id="a6f-Ie-b92"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Npq-zy-qra" secondAttribute="trailing" constant="85" id="aYW-Ds-ylK"/>
+                            <constraint firstItem="Npq-zy-qra" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aeG-qu-nEk"/>
+                            <constraint firstItem="Pww-cI-Wz7" firstAttribute="top" secondItem="Npq-zy-qra" secondAttribute="bottom" constant="60" id="hGY-KR-1Qh"/>
+                            <constraint firstItem="Npq-zy-qra" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="yfR-9b-x8l"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="priceLabel" destination="RO2-Fw-Nbp" id="765-WZ-2Xp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dog" width="1372" height="2024.5"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
